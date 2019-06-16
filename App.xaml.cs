@@ -3,7 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-namespace CalcularIMC
+namespace CalculadoraCombustivel
 {
     public partial class App : Application
     {
@@ -11,7 +11,7 @@ namespace CalcularIMC
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
