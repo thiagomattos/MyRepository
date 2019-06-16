@@ -1,9 +1,9 @@
-﻿using CarWash3.Telas;
-using System;
+﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace CarWash3
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+namespace CalcularIMC
 {
     public partial class App : Application
     {
@@ -11,7 +11,7 @@ namespace CarWash3
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage(null));
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
@@ -30,4 +30,3 @@ namespace CarWash3
         }
     }
 }
-
