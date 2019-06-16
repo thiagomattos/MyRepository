@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             x:Class="CarWash3.Telas.Pagamento">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" Padding="20">
+            <StackLayout Padding="10" Margin="0,20,0,0">
+                <Label Text="Pagamento"
+                FontAttributes="Bold"
+                FontSize="25"
+                VerticalOptions="StartAndExpand"  
+                HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Valor Total"
+                FontSize="18"
+                VerticalOptions="FillAndExpand"
+                FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Padding="0" Spacing="12">
+                <Entry x:Name="valortotal"
+                Text=""               
+                FontSize="15" 
+                VerticalOptions="FillAndExpand"
+                FontAttributes="Bold"/>
+
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Como Deseja Pagar?"
+                       FontSize="18"/>
+                <input:RadioButtonGroupView>
+                    <input:RadioButton x:Name="dinheiro"  Text="Dinheiro" />
+                    <input:RadioButton x:Name="cartao"  Text="Cartão de Crédito" />
+                </input:RadioButtonGroupView>
+            </StackLayout>
+
+            <StackLayout Padding="0" Spacing="12">
+            </StackLayout>
+            <StackLayout Padding="0" Spacing="12">
+            </StackLayout>
+            <StackLayout Padding="0" Spacing="12">
+            </StackLayout>
+
+            <StackLayout Padding="0" Spacing="12">
+                <Entry Text="Troco? Pra Quanto?"></Entry>
+            </StackLayout>
+
+            <StackLayout Padding="0" Spacing="12">
+            </StackLayout>
+            <StackLayout Padding="0" Spacing="12">
+            </StackLayout>
+            <StackLayout Padding="0" Spacing="12">
+            </StackLayout>
+
+            <Button Text="Concluir" Clicked="OnConcluir"  Margin="70,20,70,20" BackgroundColor="CadetBlue" FontAttributes="Bold" FontSize="18" Padding="10"/>
+
+        </StackLayout>
+
+
+
+
+    </ContentPage.Content>
+
+</ContentPage>

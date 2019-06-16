@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CarWash3.Telas.Home">
+
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" Padding="20">
+            <StackLayout Padding="10" Margin="0,20,0,0">
+                <Label Text="O QUE VOCÊ DESEJA?"
+                FontAttributes="Bold"
+                FontSize="18"
+                VerticalOptions="StartAndExpand"  
+                HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Selecione o Tipo de Serviço:"
+                FontSize="15"
+                VerticalOptions="FillAndExpand"
+                 FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Padding="0" Spacing="12">
+                <input:RadioButtonGroupView>
+                    <input:RadioButton Text="Lavagem Simples   R$ 20,00" TextFontSize="15" x:Name="LavagemS" />
+                    <input:RadioButton Text="Lavagem Completa  R$ 30,00" TextFontSize="15" x:Name="LavagemC"/>
+                </input:RadioButtonGroupView>
+
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Polimento:"
+                FontSize="15"
+                VerticalOptions="FillAndExpand"
+                FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Padding="0" Spacing="12">
+                <input:RadioButtonGroupView>
+                    <input:RadioButton Text="Sim adc. R$ 10,00" TextFontSize="15" x:Name="Polimento" />
+                    <input:RadioButton Text="Não" TextFontSize="15" />
+
+                </input:RadioButtonGroupView>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Veiculo:"
+                FontSize="15"
+                VerticalOptions="FillAndExpand"
+                FontAttributes="Bold"
+                     />
+            </StackLayout>
+            <StackLayout Padding="0" Spacing="12">
+                <input:RadioButtonGroupView>
+                    <input:RadioButton Text="Carro" TextFontSize="15" />
+                    <input:RadioButton Text="Moto" TextFontSize="15" />
+
+                </input:RadioButtonGroupView>
+            </StackLayout>
+            <Button Text="Confirmar" Clicked="OnConfirmar" Margin="70,20,70,20" BackgroundColor="CadetBlue" FontAttributes="Bold" FontSize="18" Padding="10"/>
+
+        </StackLayout>
+
+
+
+
+    </ContentPage.Content>
+
+</ContentPage>

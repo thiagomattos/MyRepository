@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CarWash3.Telas.CadastroPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Crie sua Conta" FontSize="50" FontAttributes="Bold" TextColor="CadetBlue" HorizontalOptions="Center"/>
+            <StackLayout VerticalOptions="FillAndExpand" Padding="20" Margin="0,0,0,0">
+
+
+                <Label Text="Nome" TextColor="Black" FontAttributes="Bold"/>
+                <Entry x:Name="nomeEntry"  PlaceholderColor="Black" Placeholder="Digite seu nome"/>
+
+                <Label Text="CPF" TextColor="Black" FontAttributes="Bold"/>
+                <Entry x:Name="cpfEntry"  PlaceholderColor="Black" Placeholder="Digite seu CPF" />
+
+
+                <Label Text="Endereço" TextColor="Black" FontAttributes="Bold"/>
+                <Entry x:Name="endereçoEntry"  PlaceholderColor="Black" Placeholder="Digite seu endereço" />
+
+
+                <Label Text="E-mail" TextColor="Black" FontAttributes="Bold"/>
+                <Entry x:Name="emailEntry"  PlaceholderColor="Black" Placeholder="Digite seu e-mail" />
+
+
+                <Label Text="Senha" TextColor="Black" FontAttributes="Bold"/>
+                <Entry IsPassword="True" x:Name="senhaEntry"  PlaceholderColor="Black" Placeholder="Digite sua senha" />
+
+
+
+                <Button Text="Cadastrar" x:Name="CadastrarButton" Clicked="OnCadastrarNew" Margin="70,20,70,20" BackgroundColor="CadetBlue" FontAttributes="Bold" FontSize="18" Padding="10"/>
+
+            </StackLayout>
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
